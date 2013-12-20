@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-RailsMbtaGtfs::Application.config.secret_key_base = '4fd9a13677e1d32ec0c2a7191de73f58b1ab91535c5002c00cb47ddd74d01c575ea98b3d7a74e6cc989377ea1ac7317aea574a2f8f723e19205f354317a77aa1'
+RailsMbtaGtfs::Application.config.secret_key_base = '70d0fa0c18409c13c7570023a6e459a4059f854a731e5aaf026ee8ee9fb76405b08ed955a482058c7493fd676556074184c5c78f33a33325733d771a11e22605'
