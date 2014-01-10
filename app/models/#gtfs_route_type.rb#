@@ -1,0 +1,3 @@
+class Gtfs_route_type < ActiveRecord::Base
+  
+end

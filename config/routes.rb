@@ -1,10 +1,12 @@
 RailsMbtaGtfs::Application.routes.draw do
+  get "gtfs_routes/show"
+  get "mbta_route/mbta_route_index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-
+    root 'mbta_route#mbta_route_index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -13,6 +15,7 @@ RailsMbtaGtfs::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+      resources :gtfs_routes
 
   # Example resource route with options:
   #   resources :products do
