@@ -1,4 +1,0 @@
-class Gtfs_route < ActiveRecord::Base
-  belongs_to :Gtfs_route_type
-  
-end

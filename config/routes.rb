@@ -1,4 +1,12 @@
 RailsMbtaGtfs::Application.routes.draw do
+  get "gtfs_frequencies/show"
+  get "gtfs_feed_infos/show"
+  get "gtfs_fare_rules/show"
+  get "gtfs_fare_attributes/show"
+  get "gtfs_directions/show"
+  get "gtfs_calendars/show"
+  get "gtfs_controllers/show"
+  get "gtfs_agencys/show"
   get "gtfs_routes/show"
   get "mbta_route/mbta_route_index"
   # The priority is based upon order of creation: first created -> highest priority.
@@ -15,7 +23,7 @@ RailsMbtaGtfs::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-      resources :gtfs_routes
+      resources :gtfs_routes, :gtfs_agencys, :gtfs_calendars, :gtfs_calendar_dates, :gtfs_directions, :gtfs_fare_attributes, :gtfs_feed_info, :gtfs_frequencies
 
   # Example resource route with options:
   #   resources :products do

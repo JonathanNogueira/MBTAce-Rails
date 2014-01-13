@@ -1,7 +1,0 @@
-class GtfsRoutesController < ApplicationController
-  
-  respond_to :json, :xml
-  def show
-    @gtfs_route = GtfsRoute.find_all(params[:id])
-  end
-end
